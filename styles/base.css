@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body, html {
     margin: auto;
     height: auto;
@@ -12,7 +13,7 @@ body, html {
 }
 
 header img {
-    width: 100px;
+    width: 100%;
     height: auto;
     border-radius: 5%;
     border: 1px solid #ccc;
@@ -23,10 +24,14 @@ header img {
 header {
     display: grid;
     grid-template: auto / auto auto;
+    width: 100%;
     padding: 20px;
-    background-color: #01131E;
+    background-color: #011c2c;
     place-items: center;
+    margin: auto;
 }
+
+
 
 header h1{
     position: relative;
@@ -40,14 +45,14 @@ header h1{
 	text-decoration: none;
 	padding: .7rem;
     background-color: #dad9d9;
-	color: black;
+	color: rgb(36, 32, 32);
     cursor: pointer;
 }
 
 #menu::before {
     content: "\f0c9";
     font-family: 'Font Awesome 6 Free';
-    color: black;
+    color: rgb(36, 32, 32);
     font-size: 2rem;
     font-weight: 900; /*always use this after using font awesome unicodes */
 }
@@ -61,7 +66,7 @@ header h1{
 }
 
 nav {
-    background-color: #000000;
+    background-color: rgb(1, 11, 26);
 }
 
 .navigation{
@@ -98,6 +103,7 @@ nav a:hover{
 
 main {
     text-align: center;
+    
 }
 
 main ul{
@@ -118,9 +124,17 @@ main ul li::marker{
 }
 
 
+.word {
+    width: 90%;
+    border-bottom: 2px solid #9f9f9f;
+    margin: auto;
+    margin-top: 40px;
+    font-weight: lighter;
+}
+
 .card{
     margin: 25px auto;
-    width: 90%;
+    width: 100%;
     border: 2px solid #9f9f9f;
     border-radius: 5px;
 }
@@ -128,6 +142,7 @@ main ul li::marker{
 .card h3{
     color: white;
     margin-top: auto;
+    width: 100%;
     padding: 20px 0;
     background-color: #01131E;
     border-top-left-radius: 5px;
@@ -139,8 +154,9 @@ main ul li::marker{
 footer {
     height: auto;
     text-align: center;
+    width: 100%;
     padding: 20px;
-    background-color: #01131E;
+    background-color: #011c2c;
 }
 
 footer  p{
