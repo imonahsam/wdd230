@@ -50,7 +50,7 @@ header h1{
 }
 
 #menu::before {
-    content: "\f0c9";
+    content: "X";
     font-family: 'Font Awesome 6 Free';
     color: rgb(36, 32, 32);
     font-size: 2rem;

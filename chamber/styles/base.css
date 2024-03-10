@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: auto;
+    height: auto;
+    font-family: 'Belanosima';
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 5%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px #777;
+    justify-self: end;
+}
+
+header {
+    display: grid;
+    grid-template: auto / auto auto;
+    padding: 20px;
+    background-color: #03B5AA;
+    place-items: center;
+}
+
+
+#menu {
+	display: block;
+	font-weight:300;
+	text-decoration: none;
+	padding: .7rem;
+    background-color: #dad9d9;
+	color: #03B5AA;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "\f0c9";
+    font-family: 'Font Awesome 6 Free';
+    color: black;
+    font-size: 2rem;
+    font-weight: 900; /*always use this after using font awesome unicodes */
+}
+
+#menu.show::before {
+    content: "\f00d";
+    font-family: 'Font Awesome 6 Free';
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+nav {
+    background-color: #03B5AA;
+}
+
+.navigation{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: 'Belanosima', Times, serif;
+    font-weight: lighter;
+    transition: 0.5s;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;    
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+    opacity: .5;
+}
+
+.show li {
+	display: block;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    background-color: #03B5AA;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+    margin: 80px;
+    border-radius: 5px;  
+}
+
+.button:hover {
+    background-color: rgb(31, 134, 103);
+    color: black;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: whitesmoke;    
+}
+
+#menu {
+	display: block;
+	font-weight:300;
+	text-decoration: none;
+	padding: .7rem;
+    background-color: #dad9d9;
+	color: rgb(36, 32, 32);
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "X";
+    font-family: 'Font Awesome 6 Free';
+    color: rgb(36, 32, 32);
+    font-size: 2rem;
+    font-weight: 900; /*always use this after using font awesome unicodes */
+}
+
+#menu.show::before {
+    content: "\f00d";
+    font-family: 'Font Awesome 6 Free';
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.section-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.Action {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Styles */
+.article-group {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.article {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: rgb(174, 205, 197);
+    color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+}
+
+
+@media screen and (max-width: 4800px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    header img {
+        width: 60px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    
+    #background {
+        display: none;
+    }
+    .home-img, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
