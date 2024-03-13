@@ -12,12 +12,12 @@
     <title>Samuel Imonah - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="/wdd230/styles/base.css">
+    <link rel="stylesheet" href="/wdd230/styles/larger.css">
 </head>
 <body>
     <header>
-        <img src="images/mypho.jpg" loading="lazy"  alt="Placeholder Image photo of me" width="300" height="518">
+        <img src="images/mypho.webp" loading="lazy"  alt="Placeholder Image photo of me" width="300" height="518">
         <h1>Samuel Imonah</h1>
     </header>
 
@@ -34,6 +34,18 @@
     </nav> 
 
     <main>
+        <div class="hero">
+            
+            <picture>
+                <source srcset="images/salt-small.webp" media="(min-width: 500px)">
+                <source srcset="images/slt-lake-medium.webp" media="(min-width: 1000px)">
+                <img src="/wdd230/images/salt-lake.webp" alt="Salt Lake Temple" width="1500" height="750">
+            </picture>
+            <div class="herolabel">
+                <h2>Salt Lake Temple</h2>
+            </div>
+        </div>
+
         <h2 class="word">WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
@@ -46,6 +58,7 @@
                 <li><a href="/wdd230/week03/images/landscape.webp">WebP</a></li>
                 <li><a href="/wdd230/week03/lazyload.html">Lazy Loading</a></li>
                 <li><a href="./week03/responsive-images.html" target="_blank">Responsive images</a></li>
+                <li><a href="/wdd230/week03/bom.html">BOM Favorite Chapter Update</a></li>
                 <!--
                         <a href="./lesson07/bom.html" target="_blank">B.O.M Favorite chapters update</a></li>
                 <li><a href="./lesson08/tablebuild.html">HTML Tables</a> |
@@ -67,6 +80,8 @@
 
         </div>
     </main>
+    <iframe id="google" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3965.2547254141323!2d5.605215174991559!3d6.361068893628995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sng!4v1710347304813!5m2!1sen!2sng" width="600" height="450" style="border:0;"
+     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <!-- <iframe id="google" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6660.773843809671!2d5.5888013!3d6.3312869!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sng!4v1706103077264!5m2!1sen!2sng" 
     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
