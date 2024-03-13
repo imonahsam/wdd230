@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <link rel="stylesheet" href="/wdd230/week03/styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <p>Salt Lake Temple</p>
+            <picture>
+                <source srcset="images/salt-small.webp" media="(min-width: 500px)">
+                <source srcset="images/slt-lake-medium.webp" media="(min-width: 1000px)">
+                <img src="/wdd230/week03/images/salt-lake.webp" alt="Salt Lake Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
