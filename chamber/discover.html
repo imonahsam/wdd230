@@ -25,8 +25,8 @@
         <a id="menu"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Who WE Are</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
                 <li><a href="#">What We Do</a></li>
                 <li><a href="#">contact Us</a></li>
                 
@@ -34,11 +34,65 @@
         </nav>
     
     <main>
-        
+        <div class="container">
+            <div class="sidebar">
+
+                <div class="calendar">
+                    <h2>Calendar</h2>
+                    <!-- Calendar content will be generated dynamically with JavaScript -->
+                    
+                </div>
+                <div class="sidebar-content">
+                    <div id="message"></div>
+                    <h2>Event</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis corrupti quas quod.</p>                   
+                </div>
+
+
+                
+            </div>
+            <div class="main-content">
+                <div class="gallery">
+                    
+                    <div class="row">
+                        <div class="picture-frame">
+                            <img src="/wdd230/chamber/images/pix1.webp" alt="Photo 1">
+                            <div class="tag">Achieved a Successful Project</div>
+                        </div>
+                        <div class="picture-frame">
+                            <img src="/wdd230/chamber/images/pix2.webp" alt="Photo 2">
+                            <div class="tag">Greatness Guaranteed</div>
+                        </div>
+                        <div class="picture-frame">
+                            <img src="/wdd230/chamber/images/pix3.webp" alt="Photo 3">
+                            <div class="tag">Team Effort Pays</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="picture-frame">
+                            <img src="/wdd230/chamber/images/pix4.webp" alt="Photo 4">
+                            <div class="tag">Collaboration</div>
+                        </div>
+                        <div class="picture-frame">
+                            <img src="/wdd230/chamber/images/pix5.webp" alt="Photo 5">
+                            <div class="tag">Jubilation</div>
+                        </div>
+                        <div class="picture-frame">
+                            <img src="/wdd230/chamber/images/pix6.webp" alt="Photo 6">
+                            <div class="tag">Goals Achieved</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         
+            
+           
+        
         <section class="contact-info">
+            
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/download.jpg" alt="Benccima logo">
             <p>The Benin Chamber of Commerce Industry, Mines, and Agriculture</p>
@@ -51,8 +105,7 @@
             <p>
             Call Our Help Line
             0810 040 5583</p>
-        </section>
-      
+        </section class="com">
         <p>
             <span id="year">copy Benin Chamber of Commerce</span>
             <script>document.getElementById('year').innerHTML = `&copy ` + new Date().getFullYear();</script>
@@ -64,7 +117,9 @@
         <p id="last-modified">LAST MODIFIED: </p>        
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/date.js"></script>
     <script src="scripts/ham.js"></script>
+    <script src="scripts/calendar.js"></script>
     
 </body>
 </html>
