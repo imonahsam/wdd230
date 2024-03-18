@@ -259,14 +259,17 @@ body, h1, h2, p, ul {
     width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
 }
 
 .picture-frame {
     margin: 0 10px;
     width: 100%;
     position: relative;
+    transition: box-shadow 0.5s ease;
+}
+
+.picture-frame:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); 
 }
 
 .picture-frame img {
@@ -283,6 +286,11 @@ body, h1, h2, p, ul {
     color: black;
     padding: 5px;
     font-size: 18px;
+    transition: box-shadow 0.5s ease;
+}
+
+.picture-frame:hover .tag {
+    background-color: rgba(255, 255, 255, 0.8); 
 }
 
 
