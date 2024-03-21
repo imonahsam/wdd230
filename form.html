@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Imonah">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Samuel Imonah"/>
+    <meta property="og:title" content="Samuel Imonah - WDD 230 - Web Frontend Development"/>
+    <meta property="og:type" content="form">
+    <meta property="og:image" content="https://imonahsam.github.io/wdd230/images/site-logo.jpg" />
+    <meta property="og:url" content="https://imonahsam.github.io/wdd230/" />
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/mypho.webp" loading="lazy"  alt="Placeholder Image photo of me" width="300" height="518">
+        <h1>Samuel Imonah</h1>
+    </header>
+    <a id="menu"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>           
+            <li><a href="form.html">Form</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/lib?lang=eng&platform=web">Gospel Library</a></li>
+        </ul>
+    </nav> 
+
+    <main>
+        <h2>Form</h2>
+        <form action="record.html" method="get">
+            <!-- Username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required><br><br>
+
+            <!-- Confirm Password -->
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required oninput="checkPasswordMatch()"><br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"><br><br>
+
+            <!-- Page Rating -->
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="updateRating(this.value)">
+            <span id="rating-value">5</span><br><br>
+
+            <!-- Button -->
+            <button type="submit">Submit</button>
+            <!-- Link -->
+            <a href="record.html">Click here for confirmation</a>
+
+        </form>
+    </main>
+    <footer>
+        <p>
+            <span id="year">copy</span>
+            <script>document.getElementById('year').innerHTML = `&copy ` + new Date().getFullYear();</script>
+            <br>
+            <br>
+            Samuel Imonah<br><br>
+            <span>Nigeria, Edo </span>
+        </p>
+        <p id="last-modified">LAST MODIFIED: </p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
