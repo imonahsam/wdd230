@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     
+    
 </head>
 <body>
     <header>
@@ -34,49 +35,57 @@
         </nav>
     
     <main>
-        <div class="hero">
-            <img id="hero-img" src="images/hero-img.jpg" alt="Welcome to The Benin 
-            Chamber of Commerce (BENCCIMA)">
-            <a href="join.html" class="button">Join Us</a>
-        </div>
+        <h1>Membership Application Form</h1>
+        <form action="thankyou.html" method="get">
+            <div id="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
 
-        <div class="section-group">
-            <section class="Action">
-                <h2>Event</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa corrupti, esse quasi aut voluptates eos minima voluptatibus harum, aperiam, quisquam incidunt optio laudantium voluptatum magnam amet nostrum hic reprehenderit?.</p>
-                
-            </section>
+            <div id="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
 
-            <section class="Action">
-                <h2>Chamber of Commerce</h2>
-                <p>Grow your Business and Community by Joining Our Chamber of Commerce Today.</p>
-                
-            </section>
+            <div id="form-group">
+                <label for="position">Title/Position:</label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" required>
+            </div>
 
-            <section class="Action">
-                <h2>Weather</h2>
-                <p>Current Weather: Sunny</p>
-                <p>Humidity: 35%</p>
-                <p>Wind Chill: N/A</p>
-            </section>
-        </div>
-        
-        <div class="article-group">
+            <div id="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+            </div>
 
-            <article class="article">
-                <h2>////////</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur reiciendis magni odio molestiae, error totam nam consequuntur veniam ipsam quas deserunt deleniti, enim voluptates accusantium laboriosam. Veniam, nemo velit.</p>
-            </article>
-            <article class="article">
-                <h2>//////////</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas cum alias dolorem error! Et quis delectus autem doloremque voluptatem exercitationem aperiam eligendi vero. Temporibus neque eaque totam, repellendus quae voluptatem.</p>
-            </article>
-            <article class="article">
-                <h2>///////</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt velit blanditiis, nostrum, dicta veritatis facere quasi temporibus sapiente, ratione error ab omnis aliquid recusandae corrupti eum reiciendis cum non inventore.</p>
-            </article>
-              
-        </div>    
+            <div id="form-group">
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div id="form-group">
+                <label for="organization">Business/Organization Name:</label>
+                <input type="text" id="organization" name="organization" required>
+            </div>
+
+            <div id="form-group">
+                <label for="membership-level">Membership Level:</label>
+                <select id="membership-level" name="membership-level">
+                    <option value="NP">NP Membership (No Fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </div>
+
+            <div id="form-group">
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+            
+            <button type="submit">Submit</button>
+        </form>   
     </main>
     <footer>
         
@@ -106,6 +115,7 @@
         <p id="last-modified">LAST MODIFIED: </p>        
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>
     <script src="scripts/ham.js"></script>
     
 </body>
