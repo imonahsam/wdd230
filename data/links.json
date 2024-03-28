@@ -10,24 +10,15 @@
             ]
         },
         {
-            "week": "01",
-            "links": [
-                {
-                    "url": "lesson01/design.html",
-                    "title": "Media Queries"
-                },
-                {
-                    "url": "lesson01/design-principles.html",
-                    "title": "Design Principles"
-                }
-            ]
-        },
-        {
             "week": "02",
             "links": [
                 {
-                    "url":"https://codepen.io/imonahsam/pen/WNWvLZr",
-                    "title": "CodePen Responsive Menu"
+                    "url": "lesson02/design.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
                 }
             ]
         },
@@ -35,42 +26,59 @@
             "week": "03",
             "links": [
                 {
-                    "url": "week03/bom.html" ,
+                    "url": "lesson03/images/exercise.png",
+                    "title": "Combinator exercises"
+                },
+                {
+                    "url":"https://codepen.io/Avee1000/pen/KKEqEwa",
+                    "title": "CodePen Pseudo-elements"
+                },
+                {
+                    "url":"https://codepen.io/Avee1000/pen/GReELRN",
+                    "title": "CodePen Responsive Menu"
+                }
+            ]
+        },
+        {
+            "week": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html" ,
                     "title": "B.O.M Favorite Chapters"
                 }
             ]
         },
         {
-            "week": "04",
+            "week": "06",
             "links": [
                 {
-                    "url": "week03/images/landscape.webp",
+                    "url": "lesson06/images/landscape.webp",
                     "title": "WebP Image" 
                 },
                 {
-                    "url": "week03/responsive-images.html" ,
+                    "url": "lesson06/responsive-images.html" ,
                     "title": "Responsive images"
                 }
             ]
         },
         {
-            "week": "04" ,
+            "week": "07" ,
             "links": [
                 {
-                    "url": "week03/lazyload.html",
+                    "url": "lesson07/lazyload.html",
                     "title": "Lazy Loading"
                 },
                 {
-                    "url": "week03/bom.html" ,
+                    "url": "lesson07/bom.html" ,
                     "title": "B.O.M Favorite chapters update"
                 }
             ]
         },
         {
-            "week": "04",
+            "week": "08",
             "links": [
                 {
-                    "url": "week04/tablebuild.html",
+                    "url": "lesson08/tablebuild.html",
                     "title": "HTML Tables"
                 },
                 {
@@ -80,10 +88,23 @@
             ]
         },    
         {
-            "week": "05",
+            "week": "09",
             "links": [
                 {
-                    "url": "week05/weather.html",
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON file"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        },
+        {
+            "week": "10",
+            "links": [
+                {
+                    "url": "lesson10/weather.html",
                     "title": "OpenWeather API"
                 }
             ]

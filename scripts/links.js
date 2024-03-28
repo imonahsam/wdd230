@@ -1,4 +1,4 @@
-const linksURL = "https://imonahsam.github.io/wdd230/data/links.json";
+const linksURL = "https://avee1000.github.io/wdd230/data/links.json";
 
 const unorderedList = document.getElementById('links');
 
