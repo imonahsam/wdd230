@@ -1,0 +1,92 @@
+{
+    "lessons": [
+        {
+            "week": "01" ,
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Grail Layout"
+                }
+            ]
+        },
+        {
+            "week": "01",
+            "links": [
+                {
+                    "url": "lesson01/design.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson01/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "week": "02",
+            "links": [
+                {
+                    "url":"https://codepen.io/imonahsam/pen/WNWvLZr",
+                    "title": "CodePen Responsive Menu"
+                }
+            ]
+        },
+        {
+            "week": "03",
+            "links": [
+                {
+                    "url": "week03/bom.html" ,
+                    "title": "B.O.M Favorite Chapters"
+                }
+            ]
+        },
+        {
+            "week": "04",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP Image" 
+                },
+                {
+                    "url": "week03/responsive-images.html" ,
+                    "title": "Responsive images"
+                }
+            ]
+        },
+        {
+            "week": "04" ,
+            "links": [
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "week03/bom.html" ,
+                    "title": "B.O.M Favorite chapters update"
+                }
+            ]
+        },
+        {
+            "week": "04",
+            "links": [
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables"
+                },
+                {
+                    "url": "./form-start/index.html",
+                    "title": "Web Forms"
+                }
+            ]
+        },    
+        {
+            "week": "05",
+            "links": [
+                {
+                    "url": "week05/weather.html",
+                    "title": "OpenWeather API"
+                }
+            ]
+        }
+    ]
+}

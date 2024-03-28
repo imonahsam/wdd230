@@ -49,7 +49,9 @@
         <h2 class="word">WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
-            <ul>
+            <ul id="links">
+            </ul>
+            <!--<ul>
                 <li><a href="./lesson01/holygrail.html">Holy Grail Layout</a></li>
                 <li><a href="./week01/media-query.html">Media Query</a>
                 <li> 
@@ -61,21 +63,20 @@
                 <li><a href="/wdd230/week03/bom.html">BOM Favorite Chapter Update</a></li>
                 <li><a href="https://codepen.io/imonahsam/pen/GRLWpKd">Pseudo-Class</a></li>
                 <li><a href="form.html">Web <Form></Form></a></li>
-                <!--
+                <li><a href="weather.html">Germany Weather</a></li>
+                
                         <a href="./lesson07/bom.html" target="_blank">B.O.M Favorite chapters update</a></li>
-                <li><a href="./lesson08/tablebuild.html">HTML Tables</a> |-->
-                
-                
-                <li></li>
-            </ul>
+                <li><a href="./lesson08/tablebuild.html">HTML Tables</a> |
+            </ul> -->
         </section>
         <section class="card">
             <h3>Information</h3>
             <div class="info">
-                <p>Edo State, Nigeria</p>
-                <p>Sunshine</p>
-                <p id="visit">Page Visits: </p>
+                <img id="weather-icon" src="" alt="">
+                <p> <span id="current-temp"></span> <span id="description"></span></p>
             </div>
+                <p id="visit">Page Visits: </p>
+
         </section>
         <div id="mode">
 
@@ -100,6 +101,8 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/ham.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
     
 </body>
 </html>
