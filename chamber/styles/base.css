@@ -292,7 +292,48 @@ body, h1, h2, p, ul {
 .picture-frame:hover .tag {
     background-color: rgba(255, 255, 255, 0.8); 
 }
+/* directory css */
 
+#directory-main{
+    display: block;
+    margin:2rem 2rem 4rem 2rem;
+    position: relative;
+}
+
+#button{
+    text-align: center;
+    margin: 3.5rem;
+}
+
+#button button{
+    border-radius: 10px;
+    padding: .5rem;
+    margin: .5rem;
+    background-color: #777;
+    color: white;
+    border: none;
+}
+
+#button button:hover{
+    cursor: pointer;
+    background-color: #3f3f3f;
+}
+
+#cards{
+    display: none;
+}
+
+.grid #cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.list #cards{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    box-shadow: 2px 2px 7px 1px #999999 ;
+}
 
 
 @media screen and (max-width: 4800px) {
