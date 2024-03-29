@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Bua Group",
+            "address": "11 Benin Sapele Rd, Oka, Owerri 300102, Edo",
+            "phone": "+234 1 448 0816",
+            "url" : "https://www.buacement.com/",
+            "image": "images/pix/bua.webp",
+            "memberLevel": "Gold"
+        },
+        {
+            "name": "Zenith Bank",
+            "address": "1026, Kings Square, P.M.B, Ring Rd",
+            "phone": "+234 708 062 5000",
+            "url" : "https://www.zenithbank.com/",
+            "image": "images/pix/zenith.webp",
+            "memberLevel": "Gold"
+        },
+        {
+            "name": "Jumia LTD",
+            "address": "Onomek Laboratories, Oko, 239 Airport Rd, By, Benin City 300102, Edo",
+            "phone": "+234 201 888 1106",
+            "url" : "https://www.jumia.com.ng/",
+            "image": "images/pix/jumia.webp",
+            "memberLevel": "Silver"
+        },
+        {
+            "name": "Mat-Ice",
+            "address": "99 Ekenwan Road, Benin City",
+            "phone": "+234 0816 338 5534",
+            "url" : "https://maticefastfood.com/",
+            "image": "images/pix/mat-ice.webp",
+            "memberLevel": "Bronze"
+        },
+        {
+            "name": "MTN",
+            "address": "89, Akpakpava Road, Benin City",
+            "phone": "+234 803 100 0300",
+            "url" : "https://www.mtn.ng/",
+            "image": "images/pix/mtn.webp",
+            "memberLevel": "Silver"
+        },
+        {
+            "name": "ShopRite",
+            "address": "18 Central Rd, Sapele Rd, beside NNPC,  Benin City",
+            "phone": "+234 1330 1700",
+            "url" : "https://shoprite.ng/",
+            "image": "images/pix/shoprite.webp",
+            "memberLevel": "Silver"
+        },
+        {
+            "name": "NNPC",
+            "address": "17a Ozumba Mbadiwe, Victoria Island, Lagos, Nigeria.",
+            "phone": "+234-1-2702400",
+            "url" : "https://nnpcgroup.com/",
+            "image": "images/pix/oando.webp",
+            "memberLevel": "Bronze"
+        }
+    ]
+}
