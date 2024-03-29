@@ -50,16 +50,15 @@ const displayMembers = (members) => {
 
 getMembersData();
 
-
-document.getElementById("#grid").addEventListener("click", () => {
+document.getElementById("grid").addEventListener("click", () => {
     
-    document.body.classList.toggle("#grid");
-    document.body.classList.remove(".list");
+    document.body.classList.toggle("grid");
+    document.body.classList.remove("list");
 });
 
 document.querySelector(".list").addEventListener("click", () => {
     
-    document.body.classList.toggle(".list");
-    document.body.classList.remove("#grid");
+    document.body.classList.toggle("list");
+    document.body.classList.remove("grid");
 
 });
