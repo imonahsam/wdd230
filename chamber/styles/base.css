@@ -21,13 +21,43 @@ header img {
 }
 
 header {
-    display: grid;
-    grid-template: auto / auto auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
     background-color: #03B5AA;
-    place-items: center;
+	color: #03B5AA;
+    margin: -72px;
 }
 
+header h1 {
+    border-left: 2px solid white;
+    padding-left: 1rem ;
+    color: white;
+}
+
+#content {
+    margin: 0 auto; /* use margin only if the element is block */
+}
+
+#banner{
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+}
+
+.prompt{
+    border-radius: 0 0 10px  10px;
+    background-color: white;
+    border-bottom: 5px solid burlywood;
+    border-left: 5px solid burlywood;
+    border-right: 5px solid burlywood;
+    color: black;
+    width: 100%;
+    
+    text-align: center;
+    height: 35px;
+}
 
 #menu {
 	display: block;
@@ -40,17 +70,17 @@ header {
 }
 
 #menu::before {
-    content: "\f0c9";
+    content: "=";
     font-family: 'Font Awesome 6 Free';
-    color: black;
+    color: #03B5AA;
     font-size: 2rem;
     font-weight: 900; /*always use this after using font awesome unicodes */
 }
 
 #menu.show::before {
-    content: "\f00d";
+    content: "X";
     font-family: 'Font Awesome 6 Free';
-    color: black;
+    color: #03B5AA;
     font-size: 2rem;
     font-weight: 900;
 }
@@ -123,30 +153,166 @@ main {
     background-color: whitesmoke;    
 }
 
-#menu {
-	display: block;
-	font-weight:300;
-	text-decoration: none;
-	padding: .7rem;
-    background-color: #dad9d9;
-	color: rgb(36, 32, 32);
-    cursor: pointer;
+#forecast{
+    display: grid;
+    text-align: center;
+    margin: 2rem 0;
 }
 
-#menu::before {
-    content: "X";
-    font-family: 'Font Awesome 6 Free';
-    color: rgb(36, 32, 32);
-    font-size: 2rem;
-    font-weight: 900; /*always use this after using font awesome unicodes */
+#forecast h3{
+    font-size: 28px;
+    margin: 1rem 0 2rem 0;
 }
 
-#menu.show::before {
-    content: "\f00d";
-    font-family: 'Font Awesome 6 Free';
-    color: black;
-    font-size: 2rem;
-    font-weight: 900;
+#forecast section{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#forecast section *{
+    margin: 0 1rem;
+}
+
+h4{
+    font-family: var(--paragraph-font);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+section.card {
+    background-color: var(--accent1-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    transition: transform 1s;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 25px auto;
+    width: 90%;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px rgb(92, 92, 92);
+}
+
+.card:nth-of-type(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px; 
+    background-color: var(--accent2-color); 
+    transition: width 0.5s ease; 
+}
+
+.card:hover{
+    /* background-color: rgb(255, 255, 255, 8); */
+    transform: scale(1.05)
+}
+
+.card:hover::before {
+    width: 100%;
+}
+  
+.card h2{
+    background-color: var(--accent1-color);
+    color:  var(--accent2-color);
+    margin-top: 0;
+    padding: 20px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card:nth-of-type(1) h2{
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+.card:nth-of-type(1) p,
+.card:nth-of-type(2) p{    
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.card h3{
+    padding: 2rem 1rem 1rem 1rem;
+    font-family: var(--paragraph-font);
+}
+
+
+.info{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+
+
+.info p{
+    margin-left: 10px;
+}
+
+#more-info P{
+    margin: 0 0 1rem 0;
+}
+
+#forecast h3{
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+}
+
+#spotlight{
+    position: relative;
+    text-align: center;
+    margin: 25px auto;
+    width: 90%;
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    box-shadow: 5px 5px 10px rgb(92, 92, 92);
+}
+
+#spotlight h2{
+    color: var(--accent2-color);
+    background-color: var(--accent1-color);
+    font-size: 40px;
+}
+
+#spot-ad article{
+    background-color: #fffefec2;
+    color: var(--accent2-color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px rgb(33, 33, 33);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 1rem;
+    width: 90%;
+    padding: 1rem 0;
+}
+
+#spot-ad article h3{
+    font-family: var(--paragraph-font);
+    padding: 1rem;
+}
+
+#spot-ad article p{
+    padding: .2rem 1rem;
 }
 
 .section-group {
@@ -184,8 +350,8 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 footer {
-    background-color: rgb(174, 205, 197);
-    color: #fff;
+    background-color: #03B5AA;
+	color: #03B5AA;
     padding: 25px 50px;
     margin-top: 200px;
     margin-bottom: 200px;
