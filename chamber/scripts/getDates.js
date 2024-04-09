@@ -1,5 +1,5 @@
 const modified = document.getElementById('last-modified');
-modified.style.color = 'white';
+modified.style.color = '#ffffff';
 
 let lastMod = new Date(document.lastModified);
 
