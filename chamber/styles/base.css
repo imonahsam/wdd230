@@ -129,6 +129,22 @@ nav a:hover{
     opacity: .5;
 }
 
+.join {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+.join:hover {
+    background-color: #00ffdd;
+    color: black;
+}
+
+
 .show li {
 	display: block;
 }
