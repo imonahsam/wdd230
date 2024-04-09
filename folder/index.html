@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osamagumwende Flourish Idahosa-Sunny" />
+    <meta
+            name="description"
+            content="Benncima Chamber of Commerce - Home" />
+    <meta property="og:title" content="Benncima Chamber of Commerce"/>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://avee1000.github.io/wdd230/chamber/images/edo.jpg" />
+    <meta property="og:url" content="https://avee1000.github.io/wdd230/chamber/" />
+    <title>Chamber of Commerce - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div id="content">
+        <div id="banner">
+            <p id="prompt">Join us in our chamber of commerce meet and greet on Wednesday at 7:00 p.m. </p>
+            <button type="submit" class="delete">❌</button>
+        </div>
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class='logo' src="images/white.webp" alt="Chamber logo" width="100"
+                height="112">
+            </a>
+            <h1>Benncima Chamber of Commerce</h1>
+            <label for="myCheckbox" class="switch">
+                <input type="checkbox" id="myCheckbox">
+                <span class="slider round"></span>
+            </label>
+        </header>
+
+        <a id="menu"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html" >Discover</a></li>
+                <li><a href="directory.html" >Directory</a></li>
+                <li><a href="join.html" >Join</a></li>
+            </ul>
+        </nav>
+        
+        <div id="hero-box">
+            <div class="hero">
+                <picture>
+                  <source srcset="images/hero-small.webp" media="(max-width: 640px)">
+                  <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                  <img src="images/hero-large.webp" alt="Hero" width="3000" height="2000">
+                </picture>
+            </div>
+        </div>
+
+        <main class='blog-home-grid'> 
+            <section class="card">
+                <h2>CURRENT EVENTS</h2>      
+                <h3>THE EXECUTIVE SECRETARY OF THE BOARD OF TECHNICAL AND VOCATIONAL
+                     EDUCATION AND TRAINING (TVET) VISITS BENIN CHAMBER OF COMMERCE EXECUTIVE COUNCIL</h3>      
+                <p class="blog-text1">
+                    On Tuesday, April 23rd, 2024, an anticipated meeting is scheduled between The President, Hon. 
+                    (Barr.) Austin Atakpu, and select Council members, who are set to host Dr. Terseer Nyulaku, the Executive Secretary 
+                    of the Board of Technical and Vocational Education and Training (TVET), along with his team. 
+                    The venue for this engagement is the President's office located in GRA, Benin City.<br><br>
+                    
+                    The formalities will commence with introductions from both sides. Dr. Nyulaku will highlight that the involvement of private sector entities is crucial not 
+                    only due to their status as employers but also because of their integral position as social partners in the TVET ecosystem.<br><br>
+                    
+                    During the discourse, Dr. Terseer Nyulaku will express the intention of his team to seek partnership with BENCCIMA, 
+                    particularly in light of the forthcoming launch of the Edo State Technical Talent Development Policy. He will assure the 
+                    Chamber of their commitment to collaboration by promising to forward the draft policy document for their valuable input 
+                    and feedback.<br><br>
+                    <span class="inq"> Call +234 810 040 5583 for more inquiries</span>
+                </p>
+            </section>
+            
+            <section class="card">
+                <h2>BBBBBBBBBBB</h2>     
+                <p class="blog-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Minus atque alias at iure modi, optio aliquid expedita. Temporibus quam 
+                    cupiditate error praesentium id? Officiis minus quibusdam corrupti dicta, 
+                    sequi soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Minus atque alias at iure modi, optio aliquid expedita. Temporibus quam 
+                    cupiditate error praesentium id? Officiis minus quibusdam corrupti dicta, 
+                    sequi soluta.</p>
+            </section>
+
+            <section class="card">
+                <h2>WEATHER</h2>
+                <div class="info">
+                    <p> <span id="current-temp"></span> <span id="description"></span></p>
+                </div>
+
+                <div id="more-info"></div>
+
+                <div id="forecast">
+                    <h3>3 Days Forecast</h3>
+                </div>
+            </section>
+
+            <section id="spotlight">
+                <h2> MEMBER SPOTLIGHT</h2>   
+                <div id="spot-ad">      
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="logo-area">
+                <img class='logo' src="images/white.webp" alt="Chamber logo" width="328"
+                height="294">
+                <p>Benncima Chamber of Commerce</p>
+            </div>
+
+            <div id="contact-area">
+                <p>Get In Touch</p>
+                <ul>
+                    <li>0810 040 5583</li>
+                    <li>info@benccima.org</li>
+                </ul>
+            </div>
+
+            <div id="project-area">
+                <p>&copy; 2024 - Osamagumwende Flourish Idahosa-Sunny</p>
+                <p>WDD230 Chamber Project</p>
+                <p id="last-modified">LAST MODIFIED: </p>
+                <script>
+                    const modified = document.getElementById('last-modified');
+                    modified.style.color = 'white';
+
+                    let lastMod = new Date(document.lastModified);
+
+                    modified.innerHTML += lastMod;
+                </script>
+            </div>
+        </footer>
+        
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/darkmode.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/banner.js"></script>
+        <script src="scripts/random.js"></script>
+
+    </div>
+</body>
+</html>
