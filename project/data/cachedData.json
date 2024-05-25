@@ -1,0 +1,14 @@
+{
+    "New York": {
+        "temperature": "15°C",
+        "description": "Clear sky",
+        "sunrise": "5:45 AM",
+        "sunset": "8:15 PM"
+    },
+    "London": {
+        "temperature": "10°C",
+        "description": "Cloudy",
+        "sunrise": "6:00 AM",
+        "sunset": "8:30 PM"
+    }
+}

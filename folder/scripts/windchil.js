@@ -1,3 +1,20 @@
+// const temperature = document.getElementById('temperature');
+// let newTemperature = 50;
+// temperature.innerHTML += newTemperature + `&deg;F`;
+
+// const speed = document.getElementById('speed');
+// let newSpeed = 4;
+// speed.innerHTML += newSpeed + ` km/h`;
+
+// function windchill(t, s) {
+//     let windChill = (35.74 + (0.6215 * t)) - ((35.75) * (s ** 0.16)) + ((0.4275 * t * (s ** 0.16)))
+//     return windChill;
+// }
+
+// const chill = document.getElementById('chill');
+// let windChill = windchill(newTemperature, newSpeed);
+// chill.innerHTML += windChill.toFixed() + `&deg;F`;
+
 const currentTemp = document.getElementById('current-temp');
 
 const currentDesc = document.getElementById('description');
@@ -8,7 +25,6 @@ const url = "https://api.openweathermap.org/data/2.5/forecast?lat=6.32691&lon=5.
 
 async function apiFetch() {
     try {
-        
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
