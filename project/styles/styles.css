@@ -1,7 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    background: #8c52ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,42 +8,89 @@ body {
     margin: 0;
 }
 
-.container {
-    text-align: center;
-    background-color: #fff;
+#weather-container {
+    background: rgba(225, 225, 225, 0.3);
+    max-width: 400px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    text-align: center;
 }
 
-.search-box {
-    margin-bottom: 20px;
-}
-
-#city-input {
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#search-button {
-    padding: 10px 15px;
-    background-color: #379392;
+h2, label, p {
     color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    margin: 8px 0;
 }
 
-#search-button:hover {
-    background-color: #4f86c6;
-}
-
-#weather-info {
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
     margin-top: 20px;
 }
 
-#error-message {
-    color: red;
+button {
+    background: #debff4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #8b48d7;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-focast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 10px;
 }
