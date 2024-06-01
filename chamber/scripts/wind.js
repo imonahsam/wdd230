@@ -22,6 +22,7 @@ async function apiFetch() {
     }
 }
 
+
 apiFetch();
 
 function displayWeather(data) {
