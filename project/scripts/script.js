@@ -51,7 +51,7 @@ function displayWeather(data) {
         const iconCode = data.weather[0].icon;
         const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
 
-        const temperatureHTML = `<p>${temperature}C</p>`;
+        const temperatureHTML = `<p>${temperature}&deg;C</p>`;
         const weatherHTML = `
             <p>${cityName}</p> 
             <p>${description}</p>
@@ -81,7 +81,7 @@ function displayHourlyForecast(hourlyData) {
             <div class="hourly-item">
                 <span>${hour}:00</span>
                 <img src="${iconUrl}" alt="Hourly Weather Icon">
-                <span>${temperature}C</span>
+                <span>${temperature}&deg;C</span>
             </div>
         `;
         hourlyForcast.innerHTML += hourItemHtml;
